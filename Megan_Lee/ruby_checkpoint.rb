@@ -33,6 +33,8 @@ town = {
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
 
+town[residents]pop(1)
+
 town[castle][guests].push("Belle")
 
 
@@ -98,3 +100,5 @@ children = ['Wendy', 'John', 'Michael']
 # of their names. Assign the returned array to a variable called `darling_children`.
 # Example: `Wendy` should become `Wendy Darling` in the new array.
 # Type your solution directly below this line:
+
+darling_children = children.map + 'Darling'
