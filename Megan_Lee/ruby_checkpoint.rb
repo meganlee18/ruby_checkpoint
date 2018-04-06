@@ -39,8 +39,6 @@ town[castle][guests].push("Belle")
 
 
 
-
-
 # Question 3
 # Assume you have an array of strings representing friends' names...
 
