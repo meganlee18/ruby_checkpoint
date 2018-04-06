@@ -7,12 +7,12 @@
 
 
 def offer_rose?(str)
-  if str == 'James'
+  if str == 'person'
     return "Would you take this rose, " + str + ", in exchange for giving an old beggar woman shelter from the bitter cold?"
   end
 end
 
-offer_rose? 'James'
+offer_rose? 'person'
 
 
 
@@ -101,4 +101,14 @@ children = ['Wendy', 'John', 'Michael']
 # Example: `Wendy` should become `Wendy Darling` in the new array.
 # Type your solution directly below this line:
 
-darling_children = children.map + 'Darling'
+darling_children = children.map 
+
+loop do
+    
+  result = darling_children + "Darling"
+
+        break
+    endls
+  end
+
+result
