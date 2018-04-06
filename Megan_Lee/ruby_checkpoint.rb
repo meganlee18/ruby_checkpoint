@@ -16,7 +16,6 @@ offer_rose? 'James'
 
 
 
-
 # Question 2
 # Assume the following hash...
 
@@ -34,9 +33,7 @@ town = {
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
 
-town[residents][guests].push("Belle")
-
-
+town[castle][guests].push("Belle")
 
 
 
@@ -55,7 +52,17 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 # Type your solution directly below this line:
 
 
+name = ["Chip Potts","Cogsworth", "Lumiere", "Mrs Potts"]
 
+  loop do
+    
+    print "Belle is friends with" + name
+
+          break
+      endls
+    end
+  
+   
 
 # Question 4
 # Assume the following array of hashes:
@@ -72,8 +79,13 @@ lost_boys = [
 # 30 years.
 # Type your solution directly below this line:
 
+  age = lost_boys[age]
 
+  lost_boys.each do |age|
+    result = age + 30;
+  end
 
+  puts result
 
 
 
