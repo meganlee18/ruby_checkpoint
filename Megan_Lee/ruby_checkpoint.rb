@@ -6,6 +6,14 @@
 
 
 
+def offer_rose?(str)
+  if str == 'James'
+    return "Would you take this rose, " + str + ", in exchange for giving an old beggar woman shelter from the bitter cold?"
+  end
+end
+
+offer_rose? 'James'
+
 
 
 
@@ -25,6 +33,8 @@ town = {
 # - Remove "Belle" from `residents`
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
+
+town[residents][guests].push("Belle")
 
 
 
