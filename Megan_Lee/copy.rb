@@ -1,32 +1,17 @@
-require 'pry'
 # Question 1
 # Define a method called `offer_rose`, which should take one argument named `person` (String).
 # When called the method should print to the terminal:
 # "Would you take this rose, `person`, in exchange for giving an old beggar woman shelter from the bitter cold?"
 # Type your solution directly below this line:
 
-#interpolation #{person} is same as "+ person"
 #correct answer
+
 def offer_rose (person)
-  
-  puts "Would you take this rose, #{person}, in exchange for giving an old beggar 
-  woman shelter from the bitter cold?"
+    puts "Would you take this rose, #{person}, in exchange for giving an old beggar woman shelter from the bitter cold?"
 
 end
 
-offer_rose("Joe")
-
-
-#My answer
-def offer_rose?(str)
-  if str == 'person'
-    return "Would you take this rose, " + str + ", in exchange for giving an old beggar woman shelter from the bitter cold?"
-  end
-end
-
-offer_rose? 'person'
-
-
+offer_rose('Lisa')
 
 # Question 2
 # Assume the following hash...
@@ -40,23 +25,14 @@ town = {
   }
 }
 
-# Using Ruby...
+  # Using Ruby...
 # - Remove "Belle" from `residents`
 # - Add "Belle" to the `guests` array
 # Type your solution directly below this line:
 
-#Correct Answer
-puts town[:residence].delete("Belle")
+town[:residents].delete("Belle")
 
 town[:castle][:guests].push("Belle")
-puts town[:castle][:guests]
-
-
-#My answer
-town[residents]pop(1)
-
-town[castle][guests].push("Belle")
-
 
 
 # Question 3
@@ -73,24 +49,12 @@ friends = ["Chip Potts", "Cogsworth", "Lumière", "Mrs. Potts"]
 
 
 #correct answer
-friends = ["Chip Potts","Cogsworth", "Lumiere", "Mrs Potts"]
 
 friends.each do |friend|
-  puts "Belle is friends with #{friend}"
+    puts "Belle is friends with #{friend}"
 end
 
 
-#my answer
-name = ["Chip Potts","Cogsworth", "Lumiere", "Mrs Potts"]
-
-  loop do
-    if name.length == 3
-    puts Belle is friends with #{name}
-    end
-          break
-      endls
-  end
-  
 
 # Question 4
 # Assume the following array of hashes:
@@ -109,23 +73,11 @@ lost_boys = [
 
 
 #correct answer
-#boy = key; value 
+
 lost_boys.each do |boy|
-  #reassign a new value so that it overwrites original numbers
-  boy[:age] = boy[:age] + 30
-
+    lost_boys = boy[:age] + 30
+    puts lost_boys
 end
-
-
-
-#my answer
-  age = lost_boys[age]
-
-  lost_boys.each do |age|
-    result = age + 30
-  end
-
-  puts result
 
 
 
@@ -143,19 +95,6 @@ children = ['Wendy', 'John', 'Michael']
 #Correct answer:
 
 children.map do |child|
-  darling_children = child + " Darling"
-
+    darling_children = child 
+    "#{darling_children} Darling"
 end
-
-#My Answer:
-darling_children = children.map
-
-loop do
-    
-  result = darling_children + "Darling"
-
-        break
-    endls
-  end
-
-result
